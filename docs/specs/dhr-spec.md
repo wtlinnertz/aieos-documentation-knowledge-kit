@@ -132,6 +132,7 @@ The DHR serves five roles:
 - The scoring methodology must be stated: what dimensions are scored, what weight each dimension carries, and how the final score is calculated
 - At minimum, the methodology must include coverage, currency, and accuracy dimensions
 - The score must be consistent with the findings in sections 3-6 — a high score with significant coverage gaps or inaccuracies is a contradiction
+- **Recommended default weighting:** Coverage 40%, Currency 30%, Accuracy 30%. Organizations may adjust weights but must document their methodology in the DHR §Health Score Methodology section. All three dimensions are mandatory regardless of weighting.
 
 **Failure Examples**
 - Health score absent

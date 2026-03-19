@@ -31,7 +31,7 @@ Trigger C: PMR frozen (from ODK, Layer 8) or on-demand
   Support Knowledge Article (SKA) -> generate -> validate -> freeze
   (captures incident learnings or recurring support patterns)
 
-Trigger D: Periodic or after major release
+Trigger D: Periodic (semi-annual minimum) or after major release
          |
          v
   Documentation Health Review (DHR) -> generate -> validate -> freeze
@@ -235,6 +235,10 @@ The SKA captures incident learnings or addresses recurring support patterns. Whe
 ### Purpose
 
 The DHR is a periodic audit of documentation currency, coverage, and quality. It identifies gaps, stale documentation, and documentation for deprecated features that should be retired.
+
+### Cadence
+
+DHR should be generated at least semi-annually, aligned with the RRK health review cadence. Additionally, generate DHR after any major release that significantly changes user-facing behavior. If no RRK cadence is established, default to quarterly.
 
 ### Inputs
 
