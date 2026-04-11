@@ -1,6 +1,6 @@
 # How to Use This Kit with AI
 
-This guide explains how to set up AI sessions for each artifact in the Documentation & Knowledge Kit workflow. Follow the session setup instructions precisely — incorrect session setup is the most common cause of poor artifact quality.
+This guide explains how to set up AI sessions for each artifact in the Documentation & Knowledge Kit workflow. Follow the session setup instructions precisely. Incorrect session setup is the most common cause of poor artifact quality.
 
 ---
 
@@ -8,20 +8,19 @@ This guide explains how to set up AI sessions for each artifact in the Documenta
 
 **One artifact per session.** Do not generate multiple artifacts in the same session.
 
-**Separate generation and validation.** Always validate in a new session. Never ask the AI that generated an artifact to validate it — this produces self-validation bias.
+**Separate generation and validation.** Always validate in a new session. Never ask the AI that generated an artifact to validate it. This produces self-validation bias.
 
 **Include full frozen documents.** Do not summarize upstream artifacts. Provide the complete document.
 
----
 
-## UDR — Generation Session
+## UDR. Generation Session
 
 **Session setup:**
 ```
 Documents to provide:
-1. Frozen RR (Release Record — full document)
-2. Frozen PRD (Product Requirements Document — full document)
-3. Frozen WDD (Work Decomposition Document — acceptance criteria)
+1. Frozen RR (Release Record. Full document)
+2. Frozen PRD (Product Requirements Document. Full document)
+3. Frozen WDD (Work Decomposition Document. Acceptance criteria)
 4. docs/specs/udr-spec.md
 5. docs/artifacts/udr-template.md
 6. docs/principles/documentation-principles.md
@@ -32,7 +31,7 @@ Follow the prompt in docs/prompts/udr-prompt.md.
 Use the template exactly. Satisfy all hard gates in the spec.
 Document every released capability from the RR.
 Trace documentation claims to PRD requirements and WDD acceptance criteria.
-Do not document features not in the RR — mark any assumptions with
+Do not document features not in the RR. Mark any assumptions with
 [ASSUMPTION: reason]. Output pure Markdown."
 ```
 
@@ -56,15 +55,14 @@ Do not suggest improvements. Judge only what is explicitly present.
 Output JSON using the format defined in docs/validators/udr-validator.md."
 ```
 
----
 
-## ARR — Generation Session
+## ARR. Generation Session
 
 **Session setup:**
 ```
 Documents to provide:
-1. Frozen TDD (Technical Design Document — full document, especially API contracts)
-2. Frozen SAD (System Architecture Document — system boundaries)
+1. Frozen TDD (Technical Design Document. Full document, especially api contracts)
+2. Frozen SAD (System Architecture Document. System boundaries)
 3. docs/specs/arr-spec.md
 4. docs/artifacts/arr-template.md
 5. docs/principles/documentation-principles.md
@@ -76,7 +74,7 @@ Use the template exactly. Satisfy all hard gates in the spec.
 Document every public API endpoint from the TDD.
 Include method, path, parameters, request/response schemas, status codes,
 and at least one example per endpoint.
-Do not invent endpoints not in the TDD — mark any assumptions with
+Do not invent endpoints not in the TDD. Mark any assumptions with
 [ASSUMPTION: reason]. Output pure Markdown."
 ```
 
@@ -100,9 +98,8 @@ Do not suggest improvements. Judge only what is explicitly present.
 Output JSON using the format defined in docs/validators/arr-validator.md."
 ```
 
----
 
-## SKA — Generation Session
+## SKA. Generation Session
 
 **Session setup:**
 ```
@@ -142,16 +139,15 @@ Do not suggest improvements. Judge only what is explicitly present.
 Output JSON using the format defined in docs/validators/ska-validator.md."
 ```
 
----
 
-## DHR — Generation Session
+## DHR. Generation Session
 
 **Session setup:**
 ```
 Documents to provide:
 1. All frozen UDRs, ARRs, SKAs for the service/product
 2. Current RR (what is released)
-3. Current SRP (what is running) — if available from RRK
+3. Current SRP (what is running). If available from rrk
 4. docs/specs/dhr-spec.md
 5. docs/artifacts/dhr-template.md
 6. docs/principles/documentation-principles.md
@@ -187,7 +183,6 @@ Do not suggest improvements. Judge only what is explicitly present.
 Output JSON using the format defined in docs/validators/dhr-validator.md."
 ```
 
----
 
 ## Troubleshooting
 

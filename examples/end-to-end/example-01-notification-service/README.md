@@ -1,6 +1,6 @@
 # Example: Notification Service Documentation
 
-This example demonstrates the Documentation & Knowledge Kit flow using the TaskFlow notification service scenario from the AIEOS worked example (`aieos-governance-foundation/examples/taskflow-full-flow/`).
+This example walks through the Documentation & Knowledge Kit using the TaskFlow notification service scenario from the AIEOS worked example (`aieos-governance-foundation/examples/taskflow-full-flow/`).
 
 ---
 

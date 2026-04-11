@@ -1,6 +1,6 @@
-# Session Setup — Documentation & Knowledge Kit
+# Session Setup: Documentation & Knowledge Kit
 
-Use this file to set up an AI session for each DKK artifact. Find the section for the artifact you are generating or validating. Follow the checklist before starting.
+Use this file to set up an AI session for each DKK artifact. Find the section for the artifact you're generating or validating. Follow the checklist before starting.
 
 **Rule:** Generate and validate in separate sessions. Do not self-validate.
 
@@ -8,12 +8,12 @@ Use this file to set up an AI session for each DKK artifact. Find the section fo
 
 ## User Documentation Record (UDR-{PROJECT}-{NNN})
 
-**What you're creating:** End-user documentation governance record ensuring every released capability is documented accurately, with audience-appropriate language and task-oriented coverage.
+**What you're creating:** End-user documentation governance record verifying every released capability is documented accurately, with audience-appropriate language and task-oriented coverage.
 
 **Required Inputs (confirm before starting):**
-- [ ] Frozen RR (RR-{PROJECT}-{NNN}) — Frozen and received from REK?
-- [ ] Frozen PRD — Available for requirements traceability?
-- [ ] Frozen WDD — Available for acceptance criteria?
+- [ ] Frozen RR (RR-{PROJECT}-{NNN}): Frozen and received from REK?
+- [ ] Frozen PRD: Available for requirements traceability?
+- [ ] Frozen WDD: Available for acceptance criteria?
 
 **Pre-Flight Gate Check (verify before generating):**
 - [ ] `capability_coverage`: Every capability from the RR release scope is identified and will be documented
@@ -29,7 +29,7 @@ Use this file to set up an AI session for each DKK artifact. Find the section fo
 4. Validate in a separate session: `docs/validators/udr-validator.md`
 
 **Common Failure to Avoid:**
-Documenting features by description only without showing how to accomplish tasks. The UDR requires task-oriented documentation — not just "Feature X exists" but "How to accomplish Task Y using Feature X."
+Documenting features by description only without showing how to accomplish tasks. The UDR requires task-oriented documentation: not just "Feature X exists" but "How to accomplish Task Y using Feature X."
 
 ---
 
@@ -38,8 +38,8 @@ Documenting features by description only without showing how to accomplish tasks
 **What you're creating:** Structured API documentation covering every public endpoint with contracts, authentication, error handling, and examples.
 
 **Required Inputs (confirm before starting):**
-- [ ] Frozen TDD (from EEK) or frozen RR (from REK) — Frozen and received?
-- [ ] Frozen SAD — Available for system boundary context?
+- [ ] Frozen TDD (from EEK) or frozen RR (from REK): Frozen and received?
+- [ ] Frozen SAD: Available for system boundary context?
 
 **Pre-Flight Gate Check (verify before generating):**
 - [ ] `contract_fidelity`: All public API endpoints from TDD are identified
@@ -64,8 +64,8 @@ Documenting endpoints without complete error response schemas. Every endpoint mu
 **What you're creating:** A support knowledge base article addressing a specific user problem with actionable resolution steps, written from the user's perspective.
 
 **Required Inputs (confirm before starting):**
-- [ ] Source artifact — Frozen RR, frozen PMR, or support ticket data available?
-- [ ] Problem identification — Specific problem or closely related problem set defined?
+- [ ] Source artifact: Frozen RR, frozen PMR, or support ticket data available?
+- [ ] Problem identification: Specific problem or closely related problem set defined?
 
 **Pre-Flight Gate Check (verify before generating):**
 - [ ] `problem_statement_clear`: Problem can be described from the user's perspective (symptoms, not implementation details)
@@ -89,9 +89,9 @@ Writing the problem statement from the implementation perspective ("The API retu
 **What you're creating:** A periodic audit of documentation currency, coverage, and quality across all documentation types for a service or product.
 
 **Required Inputs (confirm before starting):**
-- [ ] Frozen UDRs, ARRs, SKAs — At least some documentation artifacts exist to audit?
-- [ ] Current RR — Current release state known?
-- [ ] Current SRP — Current operational state known (if available from RRK)?
+- [ ] Frozen UDRs, ARRs, SKAs: At least some documentation artifacts exist to audit?
+- [ ] Current RR: Current release state known?
+- [ ] Current SRP: Current operational state known (if available from RRK)?
 
 **Pre-Flight Gate Check (verify before generating):**
 - [ ] `coverage_audit`: Released capabilities can be enumerated to check documentation coverage
