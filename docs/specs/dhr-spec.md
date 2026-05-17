@@ -1,6 +1,6 @@
 # Documentation Health Review — Specification
 
-Version: v1.0
+Version: v1.1
 
 The Documentation Health Review (DHR) is a periodic audit of documentation currency, coverage, and quality across all documentation types for a service or product. It is aligned with RRK health review cadence or triggered after a major release.
 
@@ -32,6 +32,19 @@ The DHR serves five roles:
 - Current RR (from REK) — what is currently released
 - Current SRP (from RRK) — what is currently running (if available)
 - Organizational principles: `documentation-principles.md` — defines documentation quality standards, including currency thresholds
+
+---
+
+## Trigger
+
+DHR is triggered by one of these events (whichever comes first):
+(a) The documentation owner reaches the third RHR cycle since the last DHR or since initial documentation release — i.e., three RHRs have been frozen for the monitored system since the last DHR
+(b) A Release Record (RR) is frozen that adds, removes, or substantially changes user-facing capabilities — indicating documentation coverage may have drifted
+(c) The documentation owner determines documentation quality has degraded based on support escalations, user feedback, or coverage gaps observed during ARR or UDR reviews
+
+Responsible owner: The documentation owner named in the Engagement Record §13 (DKK section). If no ER §13 entry exists, the release owner from the most recent RR is responsible for initiating DHR.
+
+Cadence floor: DHR must occur at least once per year for any system with a frozen UDR or ARR. Event-based triggers may produce more frequent reviews.
 
 ---
 
